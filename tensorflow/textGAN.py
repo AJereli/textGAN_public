@@ -407,7 +407,7 @@ def main():
     #global n_words
     # Prepare training and testing data
     #loadpath = "./data/three_corpus_small.p"
-    loadpath = "./real_cotra.txt"
+    loadpath = "./realtrain_cotra.txt"
     x = np.loadtxt(loadpath)
     train, val = x[:88550], x[88550:]
     ixtoword, _ = cPickle.load(open('vocab_cotra.pkl','rb'))
